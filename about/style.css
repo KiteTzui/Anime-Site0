@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+#Logo {
+    display: flex;
+    font-family: "Oswald", sans-serif;
+    font-size: large;
+    padding-left: 10%;
+    margin-right: auto;
+}
+
+nav {
+    background-color: rgba(147, 157, 120, 0.684);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 3em;
+    padding-right: 8em;
+    flex-wrap: wrap;
+}
+
+.Navi {
+    display: flex;
+    text-decoration: none;
+    color: rgb(86, 90, 67);
+}
+
+.Navi:hover {
+    transition: 1s;
+    color: aqua;
+}
+
+/* About Section */
+#about-anime {
+    background-color: #fff5e6;
+    padding: 50px 20px;
+}
+
+#about-anime h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5em;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#about-anime p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #555;
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: justify;
+}
+
+/* Feedback Section */
+#feedback {
+    padding: 40px 20px;
+    margin-top: 20px;
+    background-color: rgba(236, 236, 236, 0.8); /* Slightly transparent background */
+}
+
+#feedback h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #333;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #555;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #4CAF50; 
+    outline: none;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #dacea3;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #about-anime h1 {
+        font-size: 2em;
+    }
+
+    #about-anime p {
+        font-size: 1em;
+    }
+
+    #feedback h2 {
+        font-size: 1.8em;
+    }
+
+    form {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    #about-anime h1 {
+        font-size: 1.8em;
+    }
+
+    #about-anime p {
+        font-size: 0.9em;
+    }
+
+    #feedback h2 {
+        font-size: 1.5em;
+    }
+
+    form {
+        padding: 10px;
+    }
+
+    button {
+        font-size: 0.9em;
+    }
+}

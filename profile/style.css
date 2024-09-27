@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+body{
+    margin: 0;
+    background-color: rgb(236, 208, 173);
+}
+
+#Logo{
+    display: flex;
+    font-family: "Oswald", sans-serif;
+    font-size: large;
+    padding-left: 10%;
+    margin-right: auto;
+}
+
+nav{
+    background-color: rgba(147, 157, 120, 0.684);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 3em;
+    padding-right: 8em;
+    flex-wrap: wrap;
+}
+
+.Navi{
+    display: flex;
+    text-decoration: none;
+    color: rgb(31, 132, 102);
+}
+
+.Navi:hover{
+    transition: 1s;
+    color: aqua;
+}
+
+.Text{
+    display: flex;
+    padding-top: 20px;
+    padding-left: 5%;
+}
+
+#Animation1{
+    display: flex;
+    height: 5em;
+    position: relative;
+    top: -10px;
+}
+
+.Banner{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(172, 176, 128);
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 2em;
+}
+
+.Container h1{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Profile picture container */
+#proo {
+    height: 10vh;
+    width: 10vh;
+    border-radius: 50%;
+    border: 4px solid rgb(206, 191, 109);
+    margin-left: 20px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+/* Profile picture */
+#proo img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+#Things{
+    display: flex;
+    gap: 30px;
+}
+
+.Anlysubs{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    gap: 10em;
+
+}
+
+.Analytics{
+    position: relative;
+    padding-right: 18%;
+    padding-left: 9%;
+    margin-left: 10px;
+    background-color: antiquewhite;
+    box-shadow: 4px 1px 5px 2px rgba(147, 157, 120, 0.684);
+}
+
+.subslist{
+    position: relative;
+    padding-right: 15%;
+    padding-left: 14%;
+    align-content: center;
+    background-color: antiquewhite;
+    box-shadow: 4px 1px 5px 2px rgba(147, 157, 120, 0.684);
+}
+
+/* Container */
+.Container2{
+    display: flex;
+    gap: 9em;
+    margin-bottom: 3em;
+    background-color: rgb(206, 172, 131);
+}
+
+/* Container for Anime Watch */
+.Watch{
+    gap: 1em;
+    flex-direction: column;
+    display: flex;
+    width: 50%;
+}
+
+.Watch a{
+    text-decoration: none;
+    color: rgb(85, 73, 73);
+}
+
+#Tyoko{
+    border: 1.5px solid;
+}
+
+#Tyoko a, #Tyoko p{
+    display: inline-block;
+    margin: auto;
+}
+
+#Tyoko p {
+    margin-left: 70%;
+}
+
+/* Container for Lists */
+.Lists {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 50%; 
+    box-sizing: border-box;
+    padding: 1%; 
+}
+
+.box {
+    margin: 10px 0; 
+    border-radius: 10px;
+    width: 30%; 
+    position: relative; 
+    box-sizing: border-box;  
+}
+
+img {
+    display: block;
+    border-radius: 7px;
+    width: 100%;
+    height: auto; /* Ensures the image maintains aspect ratio */
+}
+
+#HD {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 0.2rem 0.5rem;
+    font-size: xx-small;
+    border: 1px solid white;
+    background-color: aliceblue;
+    border-radius: 1px 5px 2px 0px;
+}
+
+#SubsDubs {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    padding: 5px;
+    background-color: lightgreen;
+    border-radius: 5px;
+    font-size: small;
+}
+
+/* Responsive rules for smaller screens */
+@media(max-width: 1024px) {
+    nav {
+        padding-right: 2em;
+        gap: 2em;
+    }
+    
+    .Analytics, .subslist {
+        padding-right: 10%;
+        padding-left: 5%;
+    }
+
+    .Container2 {
+        flex-direction: column;
+        gap: 2em;
+    }
+    
+    .Lists {
+        width: 100%;
+    }
+    
+    .box {
+        width: 45%; /* On medium screens, show 2 items per row */
+    }
+
+    .Watch {
+        width: 100%;
+    }
+}
+
+@media(max-width: 768px) {
+    nav {
+        padding-right: 1em;
+        gap: 1em;
+    }
+
+    .Navi {
+        font-size: smaller;
+    }
+
+    .Analytics, .subslist {
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+
+    .Container2 {
+        flex-direction: column;
+    }
+    
+    .box {
+        width: 100%; /* On small screens, show 1 item per row */
+    }
+}
+
+@media(max-width: 480px) {
+    #proo {
+        height: 8vh;
+        width: 8vh;
+    }
+
+    nav {
+        padding-right: 1em;
+        gap: 1em;
+    }
+
+    .Navi {
+        font-size: smaller;
+    }
+
+    .Container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Text {
+        padding-left: 2%;
+    }
+
+    #Tyoko p {
+        margin-left: 50%;
+    }
+}

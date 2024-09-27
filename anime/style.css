@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+body {
+    margin: 0;
+    background-color: rgb(236, 208, 173);
+}
+
+#Logo {
+    display: flex;
+    font-family: "Oswald", sans-serif;
+    font-size: large;
+    padding-left: 10%;
+    margin-right: auto;
+}
+
+nav {
+    background-color: rgba(147, 157, 120, 0.684);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 3em;
+    padding-right: 8em;
+    flex-wrap: wrap;
+}
+
+.Navi {
+    display: flex;
+    text-decoration: none;
+    color: rgb(86, 90, 67);
+}
+
+.Navi:hover {
+    transition: 1s;
+    color: aqua;
+}
+
+
+#search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#search-bar {
+    padding: 8px;
+    padding-right: 40em;
+    font-size: 10px;
+    border: 3px solid #565a43;
+    border-radius: 4px;
+    outline: none;
+}
+
+#search-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+#search-icon {
+    width: 20px;
+    height: 20px;
+}
+
+#video{
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+#vid{
+    box-shadow: 2px 6px 2px 2px rgb(174, 169, 122);
+    border-radius: 10px;
+}
+
+
+#Text{
+    display: flex;
+    padding-top: 20px;
+    padding-left: 5%;
+    color: rgb(0, 0, 0);
+}
+
+#Animation1{
+    display: flex;
+    height: 5em;
+    position: relative;
+    top: -10px;
+}
+
+
+.Container{ 
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 30px;
+    gap: 1.9em;
+    padding-bottom: 40px;
+    background-color:rgb(228, 193, 146);
+
+}
+
+.box{
+    display: flex;  
+    margin-left: 1%;
+    margin-bottom: 0%;
+    border-radius: 10px;
+}
+
+
+
+img{
+    display: flex;
+    border-radius: 7px;
+}
+
+#HD{
+    display: flex;
+    position: absolute;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+    font-size: small;
+    border: 1px solid white ;
+    background-color: aliceblue;
+    border-radius: 1px 5px 2px 0px;
+}
+
+
+#SubsDubs{
+    display: flex;
+    position: absolute;
+    align-self: flex-end;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+    font-size: small;
+    border: 1px solid rgb(108, 196, 45) ;
+    background-color: rgb(105, 216, 148);
+    border-radius: 1px 5px 2px 0px;
+
+}
+.bottom{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    background-color: bisque;
+}
+
+.leftside{
+    position: relative;
+    flex-wrap: wrap;
+    padding-right: 14%;
+    padding-left: 7%;
+    padding-bottom: 20px;
+}
+
+#socials{
+    display: flex;
+    gap: 10px;
+}
+
+#icon1{
+    background-color: rgb(184, 170, 143);
+}
+
+#small{
+    font-family:'Times New Roman', Times, serif;
+    font-size: small;
+    opacity: 90%;
+    color: rgb(104, 85, 85);
+}
+
+.rightside{  
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;    
+    padding-right: 10.9%;
+    padding-left: 10%;
+    gap: 7em;
+}
+
+/* Responsive rules */
+@media(max-width: 1024px) {
+    .leftside, .rightside {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .rightside {
+        gap: 5em;
+    }
+}
+
+@media(max-width: 768px) {
+    .bottom {
+        flex-direction: column;
+    }
+
+    .leftside, .rightside {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .rightside {
+        justify-content: center;
+        gap: 3em;
+    }
+}
+
+@media(max-width: 480px) {
+    .leftside, .rightside {
+        padding-left: 3%;
+        padding-right: 3%;
+        flex-direction: column;
+    }
+
+    .rightside {
+        gap: 2em;
+    }
+
+    #small {
+        font-size: x-small;
+    }
+}
+
+/* Responsive rules */
+@media (max-width: 768px) {
+    nav {
+        padding-right: 2em;
+        gap: 1em;
+    }
+
+    #search-bar {
+        width: 100px;
+    }
+
+    #search-icon {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    #Logo {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    #search-bar {
+        width: 80px;
+    }
+}
